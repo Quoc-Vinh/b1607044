@@ -1,7 +1,7 @@
 <?php
 function pg_connection_string_from_database_url(){
 				extract(parse_url($_ENV["DATABASE_URL"]));
-				return "user=jitiarrkuzxgkz password=33640b35808455ae6fba89cfee97cffb217b735b3d9c14d624cf3e7d4665d298 host=ec2-18-215-111-67.compute-1.amazonaws.com dbname='d567ufs33npl7d".substr($path,1);
+				return "user=$user password=$pass host=$host dbname=".substr($path,1);
 			}
 			$db = pg_connect(pg_connection_string_from_database_url());
 			if(!$db){
