@@ -25,7 +25,7 @@
 			}else{
 				echo "Opened database successfully\n";
 			}
-			$sql="INSERT INTO student (mssv, hoten) VALUES ('$mssv','$hoten')";
+			$sql="INSERT INTO Student (mssv, hoten) VALUES ('$mssv','$hoten')";
 			$ret = pg_query($db,$sql);
 			if(!$ret){
 				echo pg_last_error($db);
