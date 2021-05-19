@@ -16,7 +16,7 @@ function pg_connection_string_from_database_url(){
 				echo "Opened database successfully\n";
 			}
 
-  $sql = "Select * from student";
+  $sql = "Select * from Student";
 
   $ret = pg_query($db,$sql);
   if(!$ret){
