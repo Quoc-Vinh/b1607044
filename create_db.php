@@ -9,7 +9,7 @@ function pg_connection_string_from_database_url(){
 			}else{
 				echo "Opened database successfully\n";
 			}
-  $sql = "CREATE TABLE student (mssv CHAR(10) PRIMARY KEY NOT NULL, hoten CHAR(50))";
+  $sql = "CREATE TABLE Student (mssv CHAR(10) PRIMARY KEY NOT NULL, hoten CHAR(50))";
   $ret = pg_query($db,$sql);
   if(!$ret){
      echo pg_last_error($db);
